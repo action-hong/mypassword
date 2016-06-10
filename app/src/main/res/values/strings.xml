@@ -1,3 +1,62 @@
 <resources>
     <string name="app_name">MyPassword</string>
+    <string name="title_activity_login_activity_two">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_addctivity">Addctivity</string>
+    <string name="title_activity_more">MoreActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_open">OpenActivity</string>
+    <string name="title_activity_login_activity_one">LoginActivityOne</string>
+    <string name="title_activity_show">ShowActivity</string>
+    <string name="title_activity_add">AddActivity</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="my_password">我的密码</string>
+    <string name="add_button">Add</string>
+    <string name="more_button">More</string>
+    <string name="password_name">名称</string>
+    <string name="password_account">账号</string>
+    <string name="password_word">密码</string>
+    <string name="back">返回</string>
+    <string name="save">存储</string>
+    <string name="hint3">请输入密码</string>
+    <string name="hint2">请输入账号</string>
+    <string name="hint1">请输入名称</string>
+    <string name="delete_password">删除</string>
+    <string name="load_password">输入登录密码</string>
+    <string name="input_password">请输入密码</string>
+    <string name="again">请再次输入</string>
+    <string name="ok">确认！</string>
+    <string name="login">Button</string>
+    <string name="welcome">welcome</string>
+    <string name="update_login_password">修改密码</string>
+    <string name="create_time">创建时间:</string>
+    <string name="last_time">:上次查看</string>
+    <string name="more_activity_label">了解更多</string>
+    <string name="recommend">推荐</string>
+    <string name="relation">联系作者</string>
+    <string name="send">导出密码</string>
+    <string name="version_name">我的密码 V1.0</string>
+    <string name="copy">复制</string>
+    <string name="error">前后密码不一致,请重新输入</string>
+
+    <string-array name="password_data">
+        <item>名称</item>
+        <item>账号</item>
+        <item>密码</item>
+    </string-array>
+    <string name="title_activity_list">ListActivity</string>
 </resources>
