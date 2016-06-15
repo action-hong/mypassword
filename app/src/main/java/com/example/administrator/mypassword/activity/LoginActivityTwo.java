@@ -31,6 +31,8 @@ public class LoginActivityTwo extends BaseActivity {
         if(password.equals(loginPassword)){
             if(isChangeLogin){//是否是更改登录密码
                 startActivity(new Intent(this,LoginActivityOne.class));
+                editor.putBoolean(IS_CHANGE_LOGIN,false);//更改完毕
+                editor.commit();
             }
             else
                 startActivity(new Intent(this,ListActivity.class));

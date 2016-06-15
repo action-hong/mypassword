@@ -5,14 +5,19 @@
     <item android:id="@+id/action_add"
         android:title="添加"
         android:orderInCategory="80"
-        android:icon="@mipmap/ab_add"
+        android:icon="@mipmap/plus49"
         app:showAsAction="ifRoom" />
 
 
 
 
-    <item android:id="@+id/action_settings"
-        android:title="@string/action_settings"
+    <item android:id="@+id/action_change"
+        android:title="@string/changePassword"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_out"
+        android:title="@string/daochu"
         android:orderInCategory="100"
         app:showAsAction="never"/>
 </menu>

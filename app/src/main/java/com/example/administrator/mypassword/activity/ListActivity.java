@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.administrator.mypassword.R;
 import com.example.administrator.mypassword.model.MyPassword;
@@ -193,9 +192,9 @@ public class ListActivity extends BaseActivity implements SlideAndDragListView.O
         // App Logo
         toolbar.setLogo(R.mipmap.ic_launcher);
         // Title
-        toolbar.setTitle("My Title");
+        toolbar.setTitle("密码管家");
         // Sub Title
-        toolbar.setSubtitle("Sub title");
+//        toolbar.setSubtitle("Sub title");
 
         setSupportActionBar(toolbar);
 
@@ -208,8 +207,14 @@ public class ListActivity extends BaseActivity implements SlideAndDragListView.O
                         Intent intent = new Intent(ListActivity.this, AddActivity.class);
                         startActivityForResult(intent, CLICK_ADDBUTTON_INTO_ADD);
                         break;
-                    case R.id.action_settings:
-                        Toast.makeText(ListActivity.this,"2",Toast.LENGTH_SHORT).show();
+                    case R.id.action_change:
+                        Intent intent2 = new Intent(ListActivity.this, LoginActivityTwo.class);
+                        editor.putBoolean(IS_CHANGE_LOGIN,true);
+                        editor.commit();
+                        startActivity(intent2);
+                        break;
+                    case R.id.action_out:
+                        Util.sendPassword(ListActivity.this);
                         break;
                 }
                 return true;
@@ -223,6 +228,8 @@ public class ListActivity extends BaseActivity implements SlideAndDragListView.O
         getMenuInflater().inflate(R.menu.menu_main,menu);
         return true;
     }
+
+
 
     @Override
     public void onDragViewStart(int position) {

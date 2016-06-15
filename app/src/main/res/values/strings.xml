@@ -52,7 +52,8 @@
     <string name="version_name">我的密码 V1.0</string>
     <string name="copy">复制</string>
     <string name="error">前后密码不一致,请重新输入</string>
-
+    <string name="daochu">导出密码</string>
+    <string name="changePassword">更换登录密码</string>
     <string-array name="password_data">
         <item>名称</item>
         <item>账号</item>
